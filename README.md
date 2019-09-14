@@ -13,7 +13,8 @@ This packade uses the Oxford Dictionary API to make the word lookups.
 
 Usage
 -------
-`func testLookupWord() {
+```
+func testLookupWord() {
 
 let lookup = SwiftPackageWordLookup(appKey: "xxxx",
 appID: "xxxx")
@@ -31,4 +32,5 @@ print("Meaning: \(meaning!)")
 // parse the word as needed.
 
 }
-}`
+}
+```
