@@ -14,13 +14,21 @@ This packade uses the Oxford Dictionary API to make the word lookups.
 Usage
 -------
 `func testLookupWord() {
+
 let lookup = SwiftPackageWordLookup(appKey: "xxxx",
 appID: "xxxx")
+
 lookup.lookupWord(word: "contemplate") { (meaning:String?, error:Error?) in
+
 guard error == nil else {
+
 return
+
 }
+
 print("Meaning: \(meaning!)")
+
 // parse the word as needed.
+
 }
 }`
