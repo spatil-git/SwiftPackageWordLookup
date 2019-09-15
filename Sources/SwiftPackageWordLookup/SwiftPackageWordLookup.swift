@@ -1,4 +1,4 @@
-struct SwiftPackageWordLookup {
+public struct SwiftPackageWordLookup {
     let appKey:String
     let appID:String
     func lookupWord(word:String, completionHandler:@escaping ((String?, Error?)->Void)) {

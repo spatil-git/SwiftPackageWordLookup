@@ -17,7 +17,7 @@ enum APIError:Error {
     case invalidWord
 }
 
-class DictionaryAPIHandler:NSObject, URLSessionDataDelegate {
+public class DictionaryAPIHandler:NSObject, URLSessionDataDelegate {
     let appID:String
     let appKey:String
     let language = "en-gb"
