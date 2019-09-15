@@ -43,7 +43,7 @@ class DictionaryAPIHandler:NSObject, URLSessionDataDelegate {
         urlRequest.addValue(self.appID, forHTTPHeaderField: "app_id")
         urlRequest.addValue(self.appKey, forHTTPHeaderField: "app_key")
         let configuration = URLSessionConfiguration.default
-        if #available(OSX 10.13, *) {
+        if #available(OSX 10.13,iOS 11, *) {
             configuration.waitsForConnectivity = true
         } else {
             // Fallback on earlier versions
