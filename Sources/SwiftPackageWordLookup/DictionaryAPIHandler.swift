@@ -57,7 +57,7 @@ public class DictionaryAPIHandler:NSObject, URLSessionDataDelegate {
     }
 }
 
-extension DictionaryAPIHandler {
+public extension DictionaryAPIHandler {
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
         if data.count > 0 {
             receivedData.append(data)
