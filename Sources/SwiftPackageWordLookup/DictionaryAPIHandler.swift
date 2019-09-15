@@ -17,7 +17,7 @@ enum APIError:Error {
     case invalidWord
 }
 
-public class DictionaryAPIHandler:NSObject, URLSessionDataDelegate {
+class DictionaryAPIHandler:NSObject, URLSessionDataDelegate {
     let appID:String
     let appKey:String
     let language = "en-gb"
@@ -57,7 +57,7 @@ public class DictionaryAPIHandler:NSObject, URLSessionDataDelegate {
     }
 }
 
-public extension DictionaryAPIHandler {
+extension DictionaryAPIHandler {
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
         if data.count > 0 {
             receivedData.append(data)
